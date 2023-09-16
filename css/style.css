@@ -19,7 +19,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 60px;
+  padding: 30px 90px;
   transition-duration: 1s;
 
 }
@@ -67,6 +67,11 @@ nav .nav-logo:hover a {
   color: black;
 }
 
+
+
+
+
+
 /* --------
 header menu 
 ---------*/
@@ -75,7 +80,7 @@ menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 60px;
+  padding: 10px 90px;
   background-color: white;
   box-shadow: 5px 10px 5px #e0e0e0;
 }
@@ -107,8 +112,13 @@ menu ul :last-child {
 menu ul :first-child {
   color: blue;
 }
+.menu-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-menu input {
+.menu-search input {
   background-color: #efebeb;
   border: none;
   padding: 5px;
@@ -135,3 +145,353 @@ menu i:hover {
 banner 
 --------------*/
 
+
+
+
+
+/* Caption text */
+.banner-info {
+  color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  top: 25%;
+  right: 40px;
+}
+
+.banner-info h2 {
+  font-size: 39px;
+}
+
+.banner-info p {
+  font-size: 14px;
+  color: #888888;
+}
+
+.banner-info button {
+  font-size: 14px;
+  background-color: #ff5200;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+
+}
+
+.banner-info button:hover {
+  background: black;
+  box-shadow: 1px 1px #888888;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+
+
+
+/* ----------------
+  phone item section  
+ --------------*/
+.phone-item {
+  padding: 40px 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.phone-item .item-box {
+  /* background-color: rgb(104, 0, 108); */
+  padding: 15px;
+  border-radius: 10px;
+  color: white; 
+  transition: 0.5s all ease-in-out;
+}
+
+.box1{
+  background-color: rgb(78, 163, 255);
+}
+
+.box1:hover{
+  background-color: rgb(143, 255, 73);
+}
+.box2{
+  background-color: rgb(104, 0, 108);
+}
+.box2:hover{
+  background-color: tomato;
+}
+.box3{
+  background-color: rgb(143, 255, 73);
+}
+.box3:hover{
+  background-color: rgb(78, 163, 255);
+}
+
+
+
+.phone-item .item-box .item-box-icon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.phone-item .item-box .item-box-icon i {
+  font-size: 70px;
+  width: 30%;
+}
+.phone-item .item-box .item-box-icon h3 {
+  font-size: 50px;
+  line-height: 45px;
+  
+}
+.phone-item .item-box p {
+  font-size: 15px;
+  padding-top: 3%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width:768px) {
+  .slid-move-button {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .prev,
+  .next {
+    top: 30%;
+  }
+
+  .text {
+    font-size: 11px
+  }
+
+  .banner-info {
+    top: 15%
+  }
+
+  .banner-info h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .banner-info p {
+    display: none;
+  }
+
+
+  .phone-item {
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  
+  
+  menu i {
+    font-weight: bold;
+    padding: 10px;
+    /* border: 1px solid; */
+    border-radius: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 429px) {
+
+  nav {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  nav .nav-logo a {
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+
+  menu {
+    display: block;
+    /* flex-wrap: wrap; */
+  }
+
+  menu ul {
+    display: block;
+    /* flex-wrap: wrap; */
+  }
+
+  menu ul li {
+    list-style: none;
+    border-bottom: 1px solid rgb(163, 161, 161);
+    border-right: none;
+    align-items: center;
+
+  }
+
+  menu input {
+    background-color: #efebeb;
+    padding: 10px 10px;
+    width: 90%;
+
+  }
+
+  menu i {
+    margin-left: -33px;
+    font-weight: bold;
+    padding: 10px;
+    /* border: 1px solid; */
+    border-radius: 10px;
+  }
+
+
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+
+  .banner-info {
+    top: 10%;
+
+  }
+
+  .banner-info h2 {
+    font-size: 20px;
+  }
+
+
+  .phone-item {
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 385px) {
+  .banner-info h2 {
+    font-size: 14px;
+    margin-bottom: -5px;
+
+  }
+}

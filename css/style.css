@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  background-color: #efebeb;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  transition-duration: 1s;
+
+}
+
+nav .nav-heading h1 {
+  font-size: 35px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.text-size {
+  font-size: 50px;
+}
+
+.text-color-tometo {
+  color: tomato;
+}
+
+.text-color-green {
+  color: green;
+  font-size: 40px;
+}
+
+nav .nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+nav .nav-logo img {
+  width: 100px;
+  border-radius: 50%;
+  /* border: 3px solid green; */
+  box-shadow: 2px 10px #888888;
+}
+
+nav .nav-logo a {
+  color: green;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav .nav-logo:hover a {
+  color: black;
+}
+
+/* --------
+header menu 
+---------*/
+
+menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  background-color: white;
+  box-shadow: 5px 10px 5px #e0e0e0;
+}
+
+menu ul {
+  display: flex;
+}
+
+menu ul li {
+  list-style: none;
+  border-right: 1px solid rgb(163, 161, 161);
+  padding: 3px 13px;
+  /* font-family: ; */
+  font-weight: 700;
+  cursor: pointer;
+}
+
+menu ul li:hover {
+  list-style: none;
+  padding: 3px;
+  padding: 3px 13px;
+  color: blue;
+}
+
+menu ul :last-child {
+  border: none;
+}
+
+menu ul :first-child {
+  color: blue;
+}
+
+menu input {
+  background-color: #efebeb;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+menu i {
+  margin-left: -33px;
+  font-weight: bold;
+  padding: 0 10px;
+  /* border: 1px solid; */
+  border-radius: 10px;
+}
+
+menu i:hover {
+  color: #979595;
+  cursor: pointer;
+
+
+}
+
+/* ---------------
+banner 
+--------------*/
+

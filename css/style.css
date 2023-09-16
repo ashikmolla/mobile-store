@@ -14,6 +14,17 @@ body {
   font-weight: normal;
   background-color: #efebeb;
 }
+.btn-primary{
+  background-color: #FD6E0A;
+  color:#ffffff;
+  border-radius: 6px;
+  height:64px;
+  font-size: 20px;
+  font-weight: 700;
+  border:none;
+  padding: 18px 30px;
+
+}
 
 nav {
   display: flex;
@@ -96,6 +107,7 @@ menu ul li {
   /* font-family: ; */
   font-weight: 700;
   cursor: pointer;
+  transition: 0.5s all ease-in-out;
 }
 
 menu ul li:hover {
@@ -308,6 +320,150 @@ banner
   font-size: 15px;
   padding-top: 3%;
   
+}
+
+
+
+/* .product section */
+.product{
+  padding: 40px 90px;
+  text-align: center;
+  
+}
+.product-wrappar{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.single-product{
+  /* border: 1px solid; */
+  background: white;
+  padding: 5px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.mobile-info{
+  /* border: 1px solid; */
+}
+.rating-pointe{
+  color: #ff5200;
+  font-size: 14px;
+
+}
+.mobile-info h3{
+  font-size: 18px;
+
+}
+.mobile-info p{
+  font-size:14px ;
+  line-height: 17px;
+}
+.mobile-info h5{
+  font-size: 18px;
+}
+.mobile-info h5 .price{
+color: rgb(252, 38, 0);
+font-size: 17px;
+}
+.mobile-info button{
+  background: #ff5200;
+  width: 100%;
+  border-radius: 5px;
+  padding:5px 3px;
+  color: white;
+  border: none;
+  transition: 0.5s all ease-in-out;
+}
+.mobile-info button:hover{
+  background: black;
+  color: white;
+}
+.product .showAll{
+  background: green;
+  color: white;
+  width: 15%;
+  padding: 15px 0;
+  border: none;
+  border-radius: 5px;
+  margin: 40px auto;
+  font-size: 25px;
+  transition: 0.5s all ease-in-out;
+  
+
+
+}
+.product .showAll:hover{
+  background: black;
+  color: white;
+
+
+
+}
+
+
+/* footer style */
+footer{
+	background:#270101;
+	color:white;
+   padding:50px 0;
+	margin-top:60px
+}
+.footer-section{
+
+	width:1140px;
+	display:flex;
+	margin:auto;
+	gap:50px;
+	padding:10px;
+   
+}
+.footer-first-title{
+	font-size:45px;
+	font-weight:900;
+	color:white;
+	margin-bottom:20px;
+}
+	
+.foter-description{
+	font-size:15px;
+	color:#ffffffc7;
+	margin-bottom:40px
+}
+
+.footer-contac{
+	margin-bottom:20px;
+	font-size:15px;
+	color:#ffffff;
+	margin-bottom:10px
+}
+.footer-btn-email{
+	margin-right:190px
+}
+.footer-seconde-title{
+	font-size:35px;
+	margin-bottom:20px;
+}
+.footer-section input{
+	height:30px;
+	width:300px;
+	background:none;
+	color:#ffffff;
+	margin-top:20px;
+	border:1px solid white;
+	margin-bottom: 30px;
+	padding:5px
+}
+.footer-section img{
+
+   margin-right:10px;
+	width:20px;
+	border-radius:50%;
+   background: white;
+   padding: 5px;
+   cursor: pointer;
 }
 
 
